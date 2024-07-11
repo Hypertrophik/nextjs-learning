@@ -18,7 +18,8 @@ body:
       label: Requestor Name
       description: Your full name
       placeholder: 'e.g. John Doe'
-      required: true
+      validations:
+        required: true
       
   - type: input
     id: requestor_email
@@ -26,7 +27,8 @@ body:
       label: Requestor Email
       description: Your email address
       placeholder: 'e.g. john.doe@suse.com'
-      required: true
+      validations:
+        required: true
       
   - type: input
     id: team
@@ -34,21 +36,24 @@ body:
       label: Team
       description: Your team
       placeholder: 'e.g. DevOps Team'
-      required: true
+      validations:
+        required: true
       
   - type: Text Area
     id: resource_type
     attributes:
       label: Type of Resource
       description: Type of resource for which access is requested
-      required: true
+      validations:
+        required: true
       
   - type: input
     id: access_level
     attributes:
       label: Access Level Needed
       description: Level of access required
-      required: true
+      validations:
+        required: true
 
   - type: textarea
     id: access_purpose
@@ -56,7 +61,8 @@ body:
       label: Purpose of Access
       description: Brief explanation of why access is needed
       placeholder: 'e.g. To contribute to Repository XYZ'
-      required: true
+      validations:
+        required: true
 
   - type: textarea
     id: additional_information
@@ -76,7 +82,8 @@ body:
       label: Manager/Supervisor Approval
       description: github username
       placeholder: '@hamburgler'
-      required: true
+      validations:
+        required: true
 
   - type: checkboxes
     id: checklist
@@ -85,10 +92,7 @@ body:
       description: Ensure all necessary steps are completed
       options:
         - label: Verified requestor information
-          required: true
         - label: Verified resource details
-          required: true
         - label: Received necessary approvals
-          required: true
         - label: Updated access control records
-          required: true
+          
