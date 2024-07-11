@@ -9,7 +9,8 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: "### Access Request Details"
+      value: |
+        ### Access Request Details
         
   - type: input
     id: requestor_name
