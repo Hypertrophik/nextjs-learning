@@ -40,9 +40,9 @@ body:
       required: true
       
   - type: textarea
-    id: resource_type
+    id: resource_name
     attributes:
-      label: Type of Resource
+      label: Name of Resource
       description: Type of resource for which access is requested
     validations:
       required: true
