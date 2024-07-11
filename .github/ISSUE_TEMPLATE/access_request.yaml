@@ -58,37 +58,37 @@ body:
       placeholder: 'e.g. To contribute to Repository XYZ'
       required: true
 
-   - type: textarea
-    id: additional_info
+  - type: textarea
+    id: additional_information
     attributes:
       label: Additional Information
       description: Any other relevant information or special instructions
       placeholder: 'e.g. Access needed for a specific timeframe for auditing purposes'
 
-   - type: markdown
-     attributes:
+  - type: markdown
+    attributes:
       value: |
         ### Approval
 
-    - type: input
-      id: manager_approval
-      attributes:
-        label: Manager/Supervisor Approval
-        description: github username
-        placeholder: '@hamburgler'
-        required: true
+  - type: input
+    id: manager_approval
+    attributes:
+      label: Manager/Supervisor Approval
+      description: github username
+      placeholder: '@hamburgler'
+      required: true
 
-      - type: checkboxes
-      id: checklist
-      attributes:
-        label: Checklist
-        description: Ensure all necessary steps are completed
-        options:
-          - label: Verified requestor information
-            required: true
-          - label: Verified resource details
-            required: true
-          - label: Received necessary approvals
-            required: true
-          - label: Updated access control records
-            required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Ensure all necessary steps are completed
+      options:
+        - label: Verified requestor information
+          required: true
+        - label: Verified resource details
+          required: true
+        - label: Received necessary approvals
+          required: true
+        - label: Updated access control records
+          required: true
