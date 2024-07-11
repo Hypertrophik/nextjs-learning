@@ -1,0 +1,94 @@
+name: Access Request
+description: For requesting access to additional resources. Such as Repos, Teams, Hardware, Environments.
+title: "[Access Request]: "
+labels: ["Access Scope", "Access Request", "Priority 3"]
+projects: ["Access Requests"]
+assignees:
+  - 
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Access Request Details
+        
+  - type: input
+    id: requestor_name
+    attributes:
+      label: Requestor Name
+      description: Your full name
+      placeholder: 'e.g. John Doe'
+      required: true
+      
+  - type: input
+    id: requestor_email
+    attributes:
+      label: Requestor Email
+      description: Your email address
+      placeholder: 'e.g. john.doe@suse.com'
+      required: true
+      
+  - type: input
+    id: team
+    attributes:
+      label: Team
+      description: Your team
+      placeholder: 'e.g. DevOps Team'
+      required: true
+      
+  - type: Text Area
+    id: resource_type
+    attributes:
+      label: Type of Resource
+      description: Type of resource for which access is requested
+      required: true
+      
+  - type: input
+    id: access_level
+    attributes:
+      label: Access Level Needed
+      description: Level of access required
+      required: true
+
+  - type: textarea
+    id: access_purpose
+    attributes:
+      label: Purpose of Access
+      description: Brief explanation of why access is needed
+      placeholder: 'e.g. To contribute to Repository XYZ'
+      required: true
+
+   - type: textarea
+    id: additional_info
+    attributes:
+      label: Additional Information
+      description: Any other relevant information or special instructions
+      placeholder: 'e.g. Access needed for a specific timeframe for auditing purposes'
+
+   - type: markdown
+     attributes:
+      value: |
+        ### Approval
+
+    - type: input
+      id: manager_approval
+      attributes:
+        label: Manager/Supervisor Approval
+        description: github username
+        placeholder: '@hamburgler'
+        required: true
+
+      - type: checkboxes
+      id: checklist
+      attributes:
+        label: Checklist
+        description: Ensure all necessary steps are completed
+        options:
+          - label: Verified requestor information
+            required: true
+          - label: Verified resource details
+            required: true
+          - label: Received necessary approvals
+            required: true
+          - label: Updated access control records
+            required: true
