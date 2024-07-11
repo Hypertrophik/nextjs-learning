@@ -10,7 +10,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### Access Request Details
+        ## Access Request Details
         
   - type: input
     id: requestor_name
@@ -74,7 +74,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### Approval
+        ## Approval
 
   - type: input
     id: manager_approval
