@@ -2,7 +2,7 @@ name: Access Request
 description: For requesting access to additional resources. Such as Repos, Teams, Hardware, Environments.
 title: "[Access Request]: "
 labels: ["Access Scope", "Access Request", "Priority 3"]
-projects: ["Hypertrophik/Access-Requests",]
+projects: ["Hypertrophik/Access Requests",]
 assignees:
   - 
   
