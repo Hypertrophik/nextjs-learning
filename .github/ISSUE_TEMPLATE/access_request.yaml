@@ -2,7 +2,7 @@ name: Access Request
 description: For requesting access to additional resources. Such as Repos, Teams, Hardware, Environments.
 title: "[Access Request]: "
 labels: ["Access Scope", "Access Request", "Priority 3"]
-projects: ["Access Requests"]
+projects: ["hypertrophik/Access Requests",]
 assignees:
   - 
   
@@ -13,18 +13,18 @@ body:
         ## Access Request Details
         
   - type: input
-    id: requestor_name
+    id: requester_name
     attributes:
-      label: Requestor Name
+      label: Requester Name
       description: Your full name
       placeholder: 'e.g. John Doe'
     validations:
       required: true
       
   - type: input
-    id: requestor_email
+    id: requester_email
     attributes:
-      label: Requestor Email
+      label: Requester Email
       description: Your email address
       placeholder: 'e.g. john.doe@suse.com'
     validations:
