@@ -39,7 +39,7 @@ body:
     validations:
       required: true
       
-  - type: Text Area
+  - type: textarea
     id: resource_type
     attributes:
       label: Type of Resource
