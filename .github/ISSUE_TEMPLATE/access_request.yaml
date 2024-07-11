@@ -5,12 +5,11 @@ labels: ["Access Scope", "Access Request", "Priority 3"]
 projects: ["Access Requests"]
 assignees:
   - 
-
+  
 body:
   - type: markdown
-      attributes:
-        value: |
-          ### Access Request Details
+    attributes:
+      value: "### Access Request Details"
         
   - type: input
     id: requestor_name
